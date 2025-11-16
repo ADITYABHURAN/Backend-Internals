@@ -259,13 +259,13 @@ Handles **CPU-intensive tasks** that would block the main thread and event loop.
 ┌────────────────────────────────────────────┐
 │           Thread Pool (Libuv)              │
 │                                            │
-│  ┌────────┐  ┌────────┐  ┌────────┐      │
-│  │Worker 1│  │Worker 2│  │Worker 3│ ...  │
-│  │ Thread │  │ Thread │  │ Thread │      │
-│  └────────┘  └────────┘  └────────┘      │
+│  ┌────────┐  ┌────────┐  ┌────────┐        │
+│  │Worker 1│  │Worker 2│  │Worker 3│ ...    │
+│  │ Thread │  │ Thread │  │ Thread │        │
+│  └────────┘  └────────┘  └────────┘        │
 │                                            │
-│  - Executes CPU-intensive task            │
-│  - Doesn't block main thread              │
+│  - Executes CPU-intensive task             │
+│  - Doesn't block main thread               │
 └────────────────────┬───────────────────────┘
                      │
                      ▼ (Task Complete)
